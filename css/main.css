@@ -25,3 +25,7 @@ a {
 a:hover {
     color: darkmagenta;
 }
+
+.photo {
+    max-width: 200px;
+}
