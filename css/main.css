@@ -9,6 +9,7 @@ body {
     line-height: 1.4;
     color: darkblue;
     background-color: whitesmoke;
+    text-align: center
 }
 
 img {
@@ -18,12 +19,12 @@ img {
 }
 
 a {
-    color: deeppink;
+    color: #9CF527;
     text-decoration: none;
 }
 
 a:hover {
-    color: darkmagenta;
+    color: #C8F527;
 }
 
 .avatar {
