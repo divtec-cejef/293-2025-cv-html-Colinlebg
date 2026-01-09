@@ -9,7 +9,10 @@ body {
     line-height: 1.4;
     color: blue;
     background-color: whitesmoke;
-    text-align: center
+}
+
+main {
+    padding: 20
 }
 
 img {
