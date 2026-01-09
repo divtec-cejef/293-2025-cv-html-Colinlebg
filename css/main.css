@@ -9,10 +9,12 @@ body {
     line-height: 1.4;
     color: blue;
     background-color: whitesmoke;
+    margin: 0 auto;
+    padding-bottom: 200px;
 }
 
 main {
-    padding: 20
+    padding: 20px
 }
 
 img {
