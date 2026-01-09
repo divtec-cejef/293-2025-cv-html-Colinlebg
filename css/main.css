@@ -2,11 +2,6 @@
     box-sizing: border-box;
 }
 
-.avatar {
-    max-width: 150px;
-    padding-top: 2.9em;
-}
-
 nav {
     font-size: 2.5em;
 }
@@ -30,7 +25,7 @@ body {
     font-weight: 400;
     font-size: 1.2rem;
     line-height: 1.4;
-    color: blue;
+    color: cadetblue;
     background-color: greenyellow;
     max-width: 600px;
     margin: 0 auto;
@@ -48,7 +43,7 @@ img {
 }
 
 a {
-    color: darkblue;
+    color: blue;
     text-decoration: none;
 }
 
@@ -60,3 +55,6 @@ a:hover {
     max-width: 200px;
 }
 
+h2 {
+    color: silver;
+}
