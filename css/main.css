@@ -3,8 +3,8 @@
 }
 
 .logo {
-    float: right;
-    padding: 10;
+    float: left;
+    padding: 10px;
     box-shdow: 12px 11px 100px blue;
 }
 
