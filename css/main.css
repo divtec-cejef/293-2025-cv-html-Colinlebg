@@ -3,7 +3,7 @@
 }
 
 nav {
-    font-size: 2.5em;
+    font-size: 2.25em;
 }
 
 h1 {
@@ -21,7 +21,7 @@ h1, h1 + p {
 }
 
 body {
-    font-family: Caveat, handwriting;
+    font-family: monospace;
     font-weight: 400;
     font-size: 1.2rem;
     line-height: 1.4;
