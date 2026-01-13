@@ -20,6 +20,7 @@ img {
 a {
     color: deeppink;
     text-decoration: none;
+    text-shadow: 0 0 white; 
 }
 
 a:hover {
