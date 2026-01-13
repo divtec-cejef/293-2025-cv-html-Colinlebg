@@ -40,6 +40,10 @@ body {
     padding-bottom: 200px;
 }
 
+.Rickroll {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
 }
 
 img {
