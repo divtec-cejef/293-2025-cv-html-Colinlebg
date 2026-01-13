@@ -35,13 +35,14 @@ body {
     background-image: url(../img/Photo_outer_wilds.png);
     background-position: bottom;
     background-repeat: no-repeat;
+    background-size: 600px;
     max-width: 600px;
     margin: 0 auto;
     padding-bottom: 200px;
 }
 
 .Rickroll {
-    border: 2px solid black;
+    border: 2px solid red;
     border-radius: 10px;
     padding: 5px 10px;
 }
