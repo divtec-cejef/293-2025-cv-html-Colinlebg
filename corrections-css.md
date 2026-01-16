@@ -1,7 +1,14 @@
-## A) Ajouter une taille de texte en `px` (exigence de l’exercice)
+## A) Balises <p> dans les <li>
 
-Actuellement, vos tailles de texte sont surtout en `rem` et `em`.
-Ajoutez **au moins un texte** en `px`, par exemple sur `h1` ou `h2`.
+Vous avez des `<p>` à l'intérieur des `<li>`
+
+Ce n'est pas faux car HTML l'autorise mais ça ne fait pas de sens d'un point de vue sémantique. Vos <li> contiennent qu'une seule phrase, dans le cadre d'un CV comme ceci, le <li> fait déjà office de texte, donc c'est suffisant, ça surcharge moi.
+
+---
+
+## B) Ajouter une taille de texte en `px` (exigence de l’exercice)
+
+Vous utilisez `rem` et `em`, mais il manque une taille en `px` pour un texte.
 
 Exemple :
 ```
@@ -14,10 +21,10 @@ font-size: 32px;
 
 ---
 
-## B) Ajouter une police personnalisée avec `@font-face` (obligatoire)
+## C) Ajouter une police personnalisée avec `@font-face` (obligatoire)
 
-Il manque la partie `@font-face`.
-Vous devez télécharger une police (fichiers `.woff2` idéalement) et la mettre dans `fonts/`, puis la charger.
+Il manque une vraie police via `@font-face`.
+Téléchargez une police (idéalement `.woff2`) et mettez-la dans `fonts/`.
 
 Exemple :
 ```
@@ -33,15 +40,13 @@ font-family: "MaPolice", monospace;
 }
 ```
 
-💡 *Avec `@font-face`, votre CV garde la même police même sans Internet.*
-
-> Petit rappel : depuis `css/main.css`, on remonte souvent avec `../fonts/...`.
+💡 *Avec `@font-face`, la police fonctionne même sans Internet (contrairement à Google Fonts).*
 
 ---
 
-## C) Mettre un `padding` sur le `header` (consigne)
+## D) Mettre un `padding` sur le `header` (consigne)
 
-Vous avez du padding sur `.logo`, mais l’exercice demande une **marge intérieure sur `header`**.
+L’exercice demande une marge intérieure sur le header (pas seulement sur `.logo`).
 
 Exemple :
 ```
@@ -50,38 +55,54 @@ padding: 20px;
 }
 ```
 
-💡 *Le `padding` donne de “l’air” autour du contenu, c’est plus agréable visuellement.*
+💡 *Le `padding` ajoute de l’espace “à l’intérieur” du bloc → plus lisible et plus propre.*
 
 ---
 
-## D) Navigation : éviter les gros `padding-left: 15rem`
+## E) Mettre une marge extérieure au `footer` (consigne)
 
-Actuellement :
+Ajoutez une marge extérieure au footer.
+
+Exemple :
+```
+footer {
+margin-top: 30px;
+}
+```
+
+💡 *La `margin` sépare les blocs entre eux, alors que le `padding` espace le contenu à l’intérieur.*
+
+---
+
+## F) Navigation : éviter `padding-left: 15rem` (pas responsive)
+
+Vous avez :
 ```
 nav ul {
 padding-left: 15rem;
 }
 ```
 
-Ça dépend trop de la taille d’écran et ça décale fort la navigation.
-Préférez un centrage simple :
+Ça décale beaucoup selon la taille d’écran.
+Préférez un centrage au lieu de “pousser” avec du padding.
 
+Exemple :
 ```
 nav ul {
+list-style: none;
 padding: 0;
-margin: 0;
+margin: 20px 0 0;
 display: flex;
 justify-content: center;
 gap: 20px;
-list-style: none;
 }
 ```
 
-💡 *`flex + justify-content: center` centre correctement sur toutes les tailles d’écran.*
+💡 *`flex + justify-content: center` centre le menu sur toutes les tailles d’écran.*
 
 ---
 
-## E) Images : `width: auto` est inutile ici
+## G) Images : `width: auto` inutile ici
 
 Vous avez :
 ```
@@ -92,8 +113,7 @@ width: auto;
 }
 ```
 
-Avec `max-width: 100%` et `height: auto`, `width: auto` n’apporte rien (valeur par défaut).
-Vous pouvez simplifier :
+`width: auto` est la valeur par défaut, donc vous pouvez simplifier :
 
 ```
 img {
@@ -102,6 +122,7 @@ height: auto;
 }
 ```
 
-💡 *Moins de CSS = plus lisible, plus facile à maintenir.*
+💡 *Moins de CSS = plus simple à lire et à maintenir.*
 
---
+* 📱 Responsive : le menu reste-t-il lisible sur petit écran ?
+* ✅ Validateur W3C : pas d’erreurs HTML/CSS après correction de l’accolade en trop
