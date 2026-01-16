@@ -1,8 +1,8 @@
-## A) Balises <p> dans les <li>
+## A) Balises `<p>` dans les `<li>`
 
 Vous avez des `<p>` à l'intérieur des `<li>`
 
-Ce n'est pas faux car HTML l'autorise mais ça ne fait pas de sens d'un point de vue sémantique. Vos <li> contiennent qu'une seule phrase, dans le cadre d'un CV comme ceci, le <li> fait déjà office de texte, donc c'est suffisant, ça surcharge moi.
+Ce n'est pas faux car HTML l'autorise mais ça ne fait pas de sens d'un point de vue sémantique. Vos `<li>` contiennent qu'une seule phrase, dans le cadre d'un CV comme ceci, le `<li>` fait déjà office de texte, donc c'est suffisant, ça surcharge moi.
 
 ---
 
