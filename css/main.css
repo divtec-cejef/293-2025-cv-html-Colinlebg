@@ -1,14 +1,51 @@
+nav ul {
+    padding-top: 4rem;
+    padding-left: 15rem;
+    font-size: 1.2rem;
+}
+
 * {
     box-sizing: border-box;
 }
 
+nav {
+    font-size: 1.2em;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+.logo {
+    float: left;
+    padding: 10px;
+    box-shadow: 12px 11px 100px blue;
+}
+
+h1, h1 + p {
+    text-align: center;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: monospace;
     font-weight: 400;
     font-size: 1.2rem;
     line-height: 1.4;
-    color: darkblue;
-    background-color: whitesmoke;
+    color: cadetblue;
+    background-color: #05060C;
+    background-image: url(../img/Photo_outer_wilds.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 600px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 350px;
+}
+
+.Rickroll {
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 5px 10px;
 }
 
 img {
@@ -18,16 +55,20 @@ img {
 }
 
 a {
-    color: deeppink;
+    color: blue;
     text-decoration: none;
-    text-shadow: 0 0 white; 
+    text-shadow: 2px 4px 4px white;
 }
 
 a:hover {
-    color: darkmagenta;
+    color: #C8F527;
+    text-shadow: 2px 4px 4px white;
 }
 
 .avatar {
     max-width: 200px;
 }
 
+h2 {
+    color: silver;
+}
